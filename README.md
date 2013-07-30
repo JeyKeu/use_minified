@@ -13,6 +13,19 @@ So, I had done much already to minfify scripts and stylesheets, I thought that's
 Usage
 ---
 
+<strong>CLI</strong>
+
 <code>php use_minified.php path/to/file</code>
+
+<strong>ANT</strong>
+
+<code>
+  &lt;exec executable="php">
+  
+      <arg line="path/to/use_minified.php ${build.dir}\file.php"></arg>
+      
+	</exec>
+</code>
+  
 
 <em>Note:</em> The result is saved in the same file.
